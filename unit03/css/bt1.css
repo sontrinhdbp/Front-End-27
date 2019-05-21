@@ -1,0 +1,48 @@
+div{
+			width: 150px;
+			height: 220px;
+			display: inline;
+			outline-style: double;
+			background-color: white;
+			background-repeat: no-repeat;
+			background-position: top;
+			overflow: auto;			
+		}
+
+		p{
+			font-family: sans-serif;
+			vertical-align: bottom;
+			text-align: center;
+		}
+
+		div:hover{
+			outline-color: orange;
+		}
+
+		div:hover{
+			color: red;
+			 
+		}
+
+		#div1{
+			background-image: url(../img/1.jpg);	
+		}
+
+		#div2{
+			background-image: url(../img/2.jpg);
+		}
+		#div3{
+			background-image: url(../img/3.jpg);
+		}
+		#div4{
+			background-image: url(../img/4.jpg);
+		}
+		#div5{
+			background-image: url(../img/5.jpg);
+		}
+		#div6{
+			background-image: url(../img/6.jpg);
+		}
+		.o{
+			font-weight: bold;
+		}

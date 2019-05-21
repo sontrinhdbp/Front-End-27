@@ -1,0 +1,16 @@
+p{
+	font-family: roboto;
+	font-size: 80px;
+	color: pink;
+	font-style: italic;
+	font-weight: bold;
+	text-indent: 4%;
+	text-align: justify;
+	text-decoration: unset;
+}
+
+body{
+	background-image: url("https://photo2.tinhte.vn/data/attachment-files/2019/05/4660500_Update_android_app_phan_mem.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}

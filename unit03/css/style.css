@@ -1,0 +1,59 @@
+strong{
+	color: blue;
+	size: 13;
+	font: Arial;
+	background: pink;
+}
+
+.mb{
+	color: red;
+}
+
+.mn{
+	color: blue;
+}
+
+#mt{
+	color: green;
+}
+
+#menu li{
+	color: red;
+}
+
+div > p{
+	color: green;
+}
+
+div + p{
+	color: blue;
+}
+
+div ~ p{
+	color: orange;
+}
+
+#menu li:nth-child(1){
+	background-color: pink;
+
+}
+
+#menu li:nth-last-child(1){
+	background-color: yellow;
+}
+
+#wallpaper{
+width: 192px;
+height:108px;
+background-image: url("https://photo2.tinhte.vn/data/attachment-files/2019/05/4660498_cover_home_huawei_google_ngung_hop_tac.jpg");
+background-size: cover;
+}
+
+body{
+	background-image: url("https://photo2.tinhte.vn/data/attachment-files/2019/05/4660498_cover_home_huawei_google_ngung_hop_tac.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+p{
+	color: white;
+}
