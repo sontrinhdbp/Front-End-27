@@ -39,6 +39,7 @@
   display: block;
 }
 #menu a:hover {
+	cursor: pointer;
   background: orange;
   color: #555;
 }
@@ -77,6 +78,7 @@
 	padding:3px; 
 }
 .inmenu:hover{
+	cursor: pointer; 
 	color: orange;
 }
 

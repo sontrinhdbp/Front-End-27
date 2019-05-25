@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zent Group</title>
+	<style>
+	#bg{
+		background: url(img/bg.jpg);
+		background-size: cover;
+		background-position: none;
+	}
+	
+	#header{
+		position: relative;
+		/*display: inline-block;*/
+		list-style: none;
+		background-color: #DCDDE1;
+		width: 100%;
+		height: 40px;
+		opacity: 0.8;
+	}
+	#logo{
+		position: absolute;
+		float: left;
+		font-size: 30px;
+		font-weight: bold;
+		font-family: Arial;
+		color: black;
+		top: 4px;
+		left: 35px;
+		text-decoration: none;
+	}
+	#logo:hover{
+		color: orange;
+		cursor: pointer;
+	}
+	#headfunc li{
+
+		padding-top: 10px;
+		float: right;
+		list-style: none;
+		display: inline-block;
+		width: 6%;
+		text-align: center;
+		height: 30px;
+		border-radius: 8px;
+		font-family: sans-serif;
+
+	}
+
+	#headfunc li a{
+		text-decoration: none;
+		vertical-align: middle;
+		color: black;
+	}
+	
+	#bodymenu{
+		width: 15%;
+		height: 800px;
+		display: inline-block;
+		float: left;
+	}
+	#bodymenu li{
+		list-style: none;
+		margin: 7px;
+		font-size: 20px;
+	}
+
+	#content{
+		width: 80%;
+		height: 650px;
+		display: inline-block;
+		float: left;	
+	}
+
+	#clear{
+		clear: both;
+	}
+
+	#content div{
+		width:250px;
+		background-color: #DCDDE1;
+		position: relative;
+		border-radius: 10px;
+		display: inline-block;
+		margin: 8px;
+	}
+
+	#content div >img{
+		margin-top: 4px;
+		width: 100%;
+		height: 150px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+
+	}
+
+	#content div:hover{
+		background-color: white;
+		cursor: pointer;
+	}
+	.upcontent{
+		padding-top:8px;
+		padding-left: 0px;	
+		text-align: center;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.downcontent{
+		opacity: 0.65;
+		color: white;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		position: absolute;
+		bottom: 0px;
+		background-color: black;
+		width: 100%;
+		margin: 0;
+		padding: 10px 0;
+	}
+
+	.hovertxt li:hover{
+		color: orange; 
+		cursor: pointer;
+	}
+
+	.hoverbt :hover{
+		background-color: white;
+		cursor: pointer;
+		color: orange;
+	}
+	#footer{
+		width: 100%;
+		height: 40px;
+		position: relative;
+		display: inline-block;
+	}
+	#copyright{
+		position: absolute;
+		margin-top: 25px;
+		float: left;
+		width: 50%;
+		display: inline-block;
+	}
+	#footfunc{
+		position: absolute;
+		float: left;
+		width: 100%;
+		display: inline-block;
+	}
+	#footfunc li{
+		float: right;
+		list-style: none;
+		margin: 8px;
+		text-align: center;
+
+	}
+</style>
+</head>
+<body id="bg">
+	<div id="header1">
+		<div id="header">
+			<div>
+				<li><a href="#" id="logo">Zent Group</a></li>
+			</div>
+
+			<div id="headfunc" class="hoverbt">
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Sign Up</a></li>
+					<li><a href="">Sign In</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<div id="body">
+		<div id="bodymenu" class="hovertxt">
+			<ul>
+				<li>Home</li>
+				<li>Tab Gallery</li>
+				<li>Create Tab</li>
+				<li>Favorites</li>
+				<li>Tech News</li>
+				<li>Travel</li>
+				<li>Photography</li>
+				<li>Finance World</li>
+				<li>Movie</li>
+				<li>Cooking</li>
+				<li>Fashion</li>
+			</ul>
+		</div>
+		<div id="content">
+			<div>
+				<p class="upcontent">Tech News</p>
+				<img src="img/ip.jpg">
+				<p class="downcontent">Lorem ipsum dolor sit amet.</p>
+				
+			</div>
+			<div>
+				<p class="upcontent">Travel</p>
+				<img src="img/travel.jpg">
+				<p class="downcontent">Lorem ipsum dolor sit amet. bạn muốn đi du lịch mà không có tiền? đừng lo  vì. . .</p>
+				
+			</div>
+			<div>
+				<p class="upcontent">Movie</p>
+				<img src="img/movie	.jpg">
+				<p class="downcontent">Lorem ipsum dolor sit amet.</p>
+				
+			</div>
+			<div>
+				<p class="upcontent">Fashion</p>
+				<img src="img/fashion.jpg">
+				<p class="downcontent">Lorem ipsum dolor sit amet.</p>
+				
+			</div>
+			<div>
+				<p class="upcontent">Finance</p>
+				<img src="img/finance.jpg">
+				<p class="downcontent">Lorem ipsum dolor sit amet.</p>
+				
+			</div>
+			<div>
+				<p class="upcontent">Cooking</p>
+				<img src="img/cooking.jpg">
+				<p class="downcontent">Lorem ipsum dolor sit amet.</p>
+				
+			</div>
+			<div>
+				<p class="upcontent">Photography</p>
+				<img src="img/photo.jpg">	
+				<p class="downcontent">Lorem ipsum dolor sit amet.</p>
+				
+			</div>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<div id="copyright">Copyright 2015 Zent Group</div>
+		<div id="footfunc" class="hovertxt">
+			<ul>
+				<li>About</li>
+				<li>FAQ</li>
+				<li>Blog</li>
+				<li>Mac App</li>
+				<li>iPad App</li>
+				<li>Term Of Used</li>
+				<li>Private Policy</li>
+			</ul>
+		</div>
+		<div id="clear"></div>
+	</div>
+</body>
+</html>
