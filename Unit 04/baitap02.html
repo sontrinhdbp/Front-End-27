@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<meta charset="utf-8">
+	<style>
+	*{
+		margin: 0;
+		font-size: 13pt;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+	}
+	#header{
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 60px;
+		background-color: #78b43d
+	}
+	#logo{
+		position: absolute;
+		display: inline;
+		width: 5%;
+		margin-left: 60px;
+		margin-top: 10px;
+	}
+	#menu{
+		width: 900%;
+		margin-right:10%; 
+		margin-left:10%;
+	}
+	li{
+		list-style: none;
+		font-family: sans-serif;
+	}
+	#menu ul> li{
+		float: left;
+		padding: 20px;
+		background-color: #78b43d;
+	}
+	#menu .menu-1:not(.end){
+		border-right: 1px solid white;
+	}
+	#menu .menu-1{
+		position: relative;
+	}
+	#menu .menu-1 > ul{
+		display: none;
+		position: absolute;
+		top: 61px;
+		left: -40px;
+	}
+	#menu .menu-2{
+		width: 150px;
+	}
+	#menu .menu-2:not(.end){
+		border-bottom: 1px solid white;
+
+		border-right: 1px solid white;
+	}
+	#menu .menu-1:hover > ul{
+		display: block;
+	}
+	#menu .menu-1:hover{
+		background-color: #3b8d36;
+	}
+	#menu .menu-2:hover{
+		background-color: #3b8d36;
+	}
+	
+	#menu .menu-1 li:hover > a{
+		color: black;
+	}
+	#menu .menu-2{
+		position: relative;
+	}
+	#menu .menu-2 > ul{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left:150px;
+	}
+	#menu .menu-2:hover>ul{
+		display: block;
+	}
+	#menu .menu-3{
+	width: 150px;
+}
+#menu .menu-3:not(.end){
+	border-bottom: 1px solid white;
+}
+</style>
+
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<img src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png" alt="">
+		</div>
+		<div id="menu">
+		<ul>
+			<li class="menu-1"><a href="">Xem danh mục</a>
+				<ul>
+					<li class="menu-2"><a href="">Trang chủ 24h</a></li>
+					<li class="menu-2"><a href="">Tin tức trong ngày</a>
+						<ul>
+							<li class="menu-3"><a href="">Tin Hà Nội</a></li>
+							<li class="menu-3"><a href="">Tin TP Hồ Chí Minh</a></li>
+							<li class="menu-3"><a href="">Tin Đà Nẵng</a></li>
+							<li class="menu-3"><a href="">Tai nạn giao thông</a></li>
+							<li class="menu-3"><a href="">Tin Cần Thơ</a></li>
+							<li class="menu-3 end"><a href="">Dự báo thời tiết</a></li>
+						</ul>
+					</li>
+					<li class="menu-2"><a href="">Bóng đá</a></li>
+					<li class="menu-2"><a href="">Thế giới</a></li>
+					<li class="menu-2"><a href="">Thời trang</a></li>
+					<li class="menu-2"><a href="">An ninh xã hội</a></li>
+					<li class="menu-2"><a href="">Thời trang Hi-tech</a></li>
+					<li class="menu-2"><a href="">Ẩm thực</a></li>
+					<li class="menu-2"><a href="">Làm đẹp</a></li>
+					<li class="menu-2"><a href="">Đời sống Showbiz</a></li>
+					<li class="menu-2"><a href="">Giải trí</a></li>
+					<li class="menu-2"><a href="">Bạn trẻ - Cuộc sống</a></li>
+					<li class="menu-2"><a href="">Giáo dục - Du học</a></li>
+					<li class="menu-2 end"><a href="">Thể thao</a></li>
+				</ul>
+			</li>
+			<li class="menu-1"><a href="">Tin tức quốc tế</a>
+				<ul>
+					<li class="menu-2"><a href="">Điểm nóng</a></li>
+					<li class="menu-2"><a href="">Quân sự</a></li>
+					<li class="menu-2"><a href="">Hồ sơ</a></li>
+					<li class="menu-2 end"><a href="">Thế giới động vật</a></li>
+				</ul>
+			</li>
+			<li class="menu-1"><a href="">Hi-tech</a></li>
+			<li class="menu-1"><a href="">Showbiz</a></li>
+			<li class="menu-1"><a href="">Giải trí</a></li>
+			<li class="menu-1"><a href="">Sống trẻ</a></li>
+			<li class="menu-1"><a href="">Thể thao</a></li>
+			<li class="menu-1"><a href="">Sức khỏe</a></li>
+			<li class="menu-1"><a href="">Video</a></li>
+			<li class="menu-1 end"><a href="">Game</a></li>
+		</ul>
+	</div>
+	</div>
+	
+
+	
+</body>
+</html>
