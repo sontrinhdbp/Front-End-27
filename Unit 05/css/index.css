@@ -115,6 +115,8 @@
 	font-family: arial;
 }
 
+ 
+
 #lcontent{
 	position: absolute;
 	/*display: inline-block;*/
@@ -147,7 +149,7 @@
 	float: left;
 }
 
-/*--------------------------------*/
+/*---------------dưới xong-----------------*/
 
 #rcontent{
 	position: absolute;
@@ -202,8 +204,7 @@
 .docnhieu h4{
 	width: 70%;
 	float: left;
-	color: black;
-	color: #666);
+	color: #666;
 	padding: 6px 0px 6px 20px;
 	margin: 0px;
 }

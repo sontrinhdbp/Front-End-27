@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#div1{
+			width: 900px;
+			height: 78px;
+			background-color: red;
+			animation-name: test;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+			font-family: Daxline;
+			color: white;
+			font-size: 30px;
+			font-weight: bold;
+			border-radius: 10px;
+		}
+
+		@keyframes test{
+			0%{
+				background-color: red;
+			}20%{
+				background-color: yellow;
+			}40%{
+				background-color: green;
+			}60%{
+				background-color: blue;
+			}80%{
+				background-color: violet;
+			}
+		}
+
+		@font-face{
+			font-family: Daxline;
+			src: url(FSDaxlineProThin.ttf);
+		}
+
+
+
+
+		.div2{
+			width: 200PX;
+			height: 200PX;
+			background-color: pink;
+			transition: 1s, background-color 2s;
+			border-radius: 100px;
+			
+		}
+
+		.div2:hover{
+			width: 400px;
+			height: 400px;
+			background-color: red;
+			transform: rotate(180deg);
+			border-radius: 0;
+		}
+
+		.div3{
+			width: 300px;
+			height: 200px;
+			background: linear-gradient(to top, pink, red);
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">Lorem ipsum dolor sit adipisicing elit. Minima, expedita!</div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+</body>
+</html>
