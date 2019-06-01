@@ -33,12 +33,12 @@
 	color: black;
 }
 .khoi1-l{
-	width: 43%;
+	width: 46%;
 	float: left;
 	height: 40px;
 }
 .khoi1-r{
-	width:30%;
+	width:33%;
 	float: left;
 }
 .khoi1-logo{
@@ -56,6 +56,7 @@
 .khoi1-r ul{
 	float: left;
 }
+
 
 /*=================================*/
 
@@ -92,20 +93,21 @@
 
 
 .newsfeed{
-	width: 95%;
+	width: 88%;
 	margin: 0 auto;
 	margin-top: 40px;
 	padding-bottom: 40px;
 	display: inline-block;
-	padding-left: 60px;
+	padding-left: 11%;
 
 }
 .post{
 	width: 25%;
 	height: auto;
-	margin: 2%;
+	padding: 2%;
 	display: inline-block;
 	float: left;
+	transition: 1s;
 }
 .image{
 	width: 100%;
@@ -142,6 +144,13 @@
 	clear: both;
 }
 
+.post:hover{
+	background-color: white;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: 0.6s;
+}
+
 /*-------------------------------------*/
 
 
@@ -171,13 +180,13 @@
 
 
 #khoi3-l{
-	width: 60%;
+	width: 62%;
 	height: 400px;
 	display: inline-block;
 	float: left;
 }
 #khoi3-r{
-	width: 39%;
+	width: 37%;
 	height: 400px;
 	display: inline-block;
 	padding-bottom: 90px;
@@ -191,10 +200,10 @@
 	width: 40px;
 	height: 40px;
 	border-radius: 30px;
-	border: 4px solid white;
 	display: inline-block;
 	margin-left: 17px;
 	margin-top: 25px;
+	transition: 0.6s;
 }
 .lienket img{
 	background-size: cover;
@@ -202,8 +211,12 @@
 	height: 100%;
 }
 
+.lienket:hover{
+	transform: rotate(360deg) ;
+
+}
+
 .khoi4 h1, h3{
-	padding-left: 80px;
 	color: #666
 }
 
@@ -233,13 +246,13 @@
 	color: grey;
 }
 .feedback input{
-	width: 88%;
+	width: 95%;
 	height: 40px;
 	border-radius: 5px;
 	border: none;
 }
 .feedback textarea{
-	width: 88%;
+	width: 95%;
 	height: 100px;
 	border-radius: 5px;
 	border: none;
@@ -253,6 +266,11 @@
 	border-radius: 5px;
 	border:none;
 	
+}
+
+.feedback  button:hover{
+	background-color: #46b2a2;
+	font-weight: bold;
 }
 
 
@@ -323,7 +341,7 @@
 
 	.khoi3 h1{
 		font-size: 150%;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 	.khoi3 h4{
 		font-size: 70%;
@@ -341,20 +359,11 @@
 
 @media screen and (min-width: 481px) and (max-width: 959px) {
 	.post{
-		width: 40%;
+		width: 38%;
 		height: auto;
-		margin: 3%;
+		margin: 2%;
 	}
-	.khoi2{
-		width: 100%;
-		height: auto;
-
-
-	}
-	.newsfeed{
-		padding-left: 50px;
-	}
-
+	
 	.khoi1{
 		height: 85px;
 	}
@@ -372,15 +381,13 @@
 		justify-content: center;
 	}
 	.post{
-		width: 40%;
+		width: 35%;
 		height: auto;
 		margin: 5%;
 	}
 	.khoi2{
 		width: 100%;
 		height: auto;
-
-
 	}
 	.khoi2 h1{
 		font-size: 160%
@@ -415,7 +422,7 @@
 
 	.khoi3 h1{
 		font-size: 170%;
-		margin-left: 20px;
+		margin-left: 30px;
 	}
 	.khoi3 h4{
 		font-size: 100%;
@@ -423,15 +430,18 @@
 		margin-right: 30px;
 	}
 
-	.lienket{
-		width: 5%;
+	.lienket img{
+		width: 100%;
 		height: auto;
-		margin-left: 20px;
+		margin-left: 10px;
 		margin-top: 25px;
 	}
+	.lienket:hover{
+		transform: rotate(0deg) ;
+		width: 45px;
+	}
 	.khoi4 h1, h3{
-		padding-left: 20px;
-		font-size: 90%
+		font-size: 110%
 	}
 }
 @media screen and (max-width: 716px) and (min-width: 468px)
