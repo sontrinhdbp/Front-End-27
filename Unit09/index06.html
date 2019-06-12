@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" name="fom" onsubmit="getvalue()">
+		<input type="radio" name="rd" value="HTML"> HTML
+		<br>
+		<input type="radio" name="rd" value="CSS"> CSS
+		<input type="submit" name="submit" value="submit"> 
+	</form>
+	<script>
+		function getvalue(){
+			for(var i = 0; i < 2; i++){
+				if (document.fom.rd[i].checked == true) {
+					alert(document.fom.rd[i].value)
+				}
+			}
+		}
+	</script>
+</body>
+</html>

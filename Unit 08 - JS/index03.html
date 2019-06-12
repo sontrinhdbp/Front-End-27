@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function click(){
+			window.location.href = "https://google.com";
+		}
+		function dichuotra(x){
+			x.style.width = '950px';
+			x.style.height = '500px';
+			var text = document.getElementById('text');
+			text.style.color = 'yellow';
+			x.style.transition = '1s';
+		}
+		function dichuotvao(x){
+			x.style.width = '1200px';
+			x.style.height = '660px';
+			var text = document.getElementById('text');
+			text.style.color = 'red';
+		}
+
+
+	</script>
+</head>
+<body>
+	<input type="button" value="Bấm vào em đi!" onclick="click()">
+	<br>
+	<img src="D:\Desktop\Trên Lớp\front-end\Unit 07\img\3.jpg" alt="" onmouseover="dichuotvao(this)" onmouseout="dichuotra(this)">
+	<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam provident libero, dolorum.</p>
+</body>
+</html>

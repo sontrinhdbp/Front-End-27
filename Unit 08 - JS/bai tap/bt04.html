@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script>
+	var n = prompt("Nhập n: ", "");
+	n = parseInt(n);
+	var m = prompt("Nhập m: ", "");
+	m = parseInt(m);
+	if (m<n) {
+		m = prompt("Nhập lại m (m <= n): ", "");
+	}
+	var k = prompt("Nhập k: ", "");
+	k = parseInt(k);
+	var tong = 0;
+	for (var i = n + 1; i < m; i++) {
+		if (i%k==0) {
+			tong += i;
+		}
+	}
+	alert("Tổng các số chia hết cho " + k + " trong khoảng từ " + n + " đến " + m + " là : " + tong);
+	document.write("Tổng các số chia hết cho " + k + " trong khoảng từ " + n + " đến " + m + " là : " + tong);
+</script>
+<body>
+	
+</body>
+</html>

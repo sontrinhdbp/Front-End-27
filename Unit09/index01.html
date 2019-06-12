@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="the_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, natus, iusto.</p>
+		<ul>
+			<li class="mb">Hà Nội</li>
+			<li class="mb">Hải Phòng</li>
+			<li class="mb">Nam Định</li>
+		</ul>
+		<span>Span tag 1</span>
+		<span>Span Tag 2</span>
+		<span>Span tag3</span>
+		<input type="button" name="" value="Lấy theo ID" onclick="clickid()">
+		<input type="button" value="Lấy theo class" onclick="clickclass()">
+		<input type="button" value="lấy theo tag" onclick="clicktags()">
+		<script type="text/javascript">
+			function clickid(){
+				var the_p = document.getElementById('the_p');
+				// alert(the_p.innerHTML);
+				the_p.innerHTML = "web 26" ;
+			}
+			function clickclass(){
+				var class_mb = document.getElementsByClassName("mb");
+				class_mb[0].style.color = "red";
+			}
+			function clicktags(){
+				var tags_span = document.getElementsByTagName("span");
+				tags_span[0].style.color = "blue";
+			}
+		</script>
+</body>
+</html>

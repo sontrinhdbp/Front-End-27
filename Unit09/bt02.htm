@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" name="frm" style="margin-left: 40%;">
+		<input type="checkbox" name="cb" value="HTML"> HTML
+		<br>
+		<input type="checkbox" name="cb" value="CSS"> CSS
+		<br>
+		<input type="checkbox" name="cb" value="JS"> JS
+		<br>
+		<input type="checkbox" name="cb" value="HTML"> HTML
+		<br>
+		<input type="checkbox" name="cb" value="CSS"> CSS
+		<br>
+		<input type="checkbox" name="cb" value="JS"> JS
+		<br>
+		<input type="checkbox" name="cb" value="HTML"> HTML
+		<br>
+		<input type="checkbox" name="cb" value="CSS"> CSS
+		<br>
+		<input type="checkbox" name="cb" value="JS"> JS
+		<br>
+		<input type="button" value="check all" onclick="check()">
+		<input type="button" value="uncheck all" onclick="uncheck()">
+	</form>
+	<script>
+		function check(){
+			for(var i = 0; i < document.querySelectorAll('input').length; i++) {
+					document.querySelectorAll('input')[i].checked = true;
+				}
+		}
+		function uncheck(){
+			for(var i = 0; i < document.querySelectorAll('input').length; i++) {
+					document.querySelectorAll('input')[i].checked = false;
+				}
+		}
+	</script>
+</body>
+</html>

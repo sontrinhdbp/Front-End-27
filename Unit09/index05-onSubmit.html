@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus fugit similique ipsa impedit adipisci sint quia dolorum voluptatem nulla maxime.</p>
+	<form action="" name="form_login" onsubmit="myFunction()">
+		enter your name: <input type="text" name="fname">
+		<input type="submit" value="submit">
+	</form>
+	<script>
+		function myFunction(){
+			var input = document.getElementsByTagName("input");
+			// document.write(input[0].value);
+			alert(document.form_login.fname.value);
+		}
+	</script>
+</body>
+</html>

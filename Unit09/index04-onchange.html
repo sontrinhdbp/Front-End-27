@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<select name="" id="change" onchange="myFunction()">
+		<option value="HN">Hà Nội</option>
+		<option value="HP">Hải Phòng</option>
+		<option value="TB">Thái Bình</option>
+		<option value="TH">Thanh Hóa</option>
+	</select>
+	<script>
+		function myFunction() {
+			var value = document.getElementById("change").value;
+			alert(value)
+		}
+	</script>
+</body>
+</html>

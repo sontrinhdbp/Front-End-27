@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		do{
+			var n = prompt("Nhập n: ", "");
+		} while (n<1)
+		
+		var tong = 0;
+		gt = 1;
+		for (var i = 1; i <= n; i++) {
+			gt*=i;
+			tong+=gt;
+		}
+		alert("tổng 1/1! + 2/2! + ….+ n/n! = " + tong);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

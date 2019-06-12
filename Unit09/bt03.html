@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<title>document</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#main {
+				width: 80%;
+				margin: 0 auto;
+				margin-top: 10%;
+			}
+			#button {
+				display: inline-block;
+				float: left;
+				width: 80px;
+				border: 1px solid black;
+				height: 200px;
+				padding-left: 20px
+			}
+			.text {
+				font-size: 100%;
+			}
+			#text{
+				display: inline-block;
+				width: 90%;
+				float: right;
+				text-align: justify;
+			}
+		</style>
+		<script type="text/javascript">
+			var increase = 0;
+
+			function macDinh() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+					document.getElementsByClassName('text')[i].style.fontSize="100%";
+				}
+			}
+
+			function chuLon() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+
+					increase += 40;
+					document.getElementsByClassName('text')[i].style.fontSize=(increase + 100) + "%";
+				}
+			}
+
+			function chuBe() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+
+					increase -= 40;
+					document.getElementsByClassName('text')[i].style.fontSize=(increase + 100) + "%";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div id="button">
+				<h3>Cỡ chữ</h3><br><br>
+				<button onclick="chuLon()" id="chuLon">Lớn hơn</button><br><br>
+				<button onclick="macDinh()" type="button">Mặc định</button><br><br>
+				<button onclick="chuBe()">Nhỏ hơn</button>
+			</div id="text">
+			<div id="text">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cupiditate, quis. Expedita laboriosam atque vitae, saepe ipsa incidunt! Corporis animi molestiae ea! Placeat at, expedita velit perspiciatis quidem. Fuga dolore aspernatur earum asperiores officiis modi in veniam alias maiores architecto itaque dolorum aperiam sed suscipit ea, veritatis assumenda, repudiandae, similique! Ut quo facilis quos dolor distinctio rem officiis earum cumque similique officia, quia odit tempora aliquam adipisci dignissimos soluta sapiente mollitia, ipsa dolorum unde error eligendi. Odit ad sequi distinctio saepe alias veritatis nam aliquid, minima ullam voluptate ratione et, assumenda reiciendis nemo atque adipisci repudiandae id quo animi, beatae eligendi eaque dolores. Eveniet unde sit iste placeat facere! A, ipsum.</p>
+			</div>
+		</div>
+	</body>
+</html>

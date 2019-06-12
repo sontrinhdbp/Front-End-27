@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>hẻ h1</h1>
+	<p>thẻ p 1</p>
+	<p>thẻ p 2</p>
+	<input type="button" value="click me" onclick="myFunction()">
+	<script>
+		function myFunction(){
+			var h1 = document.getElementsByTagName("h1")[0];
+			h1.parentNode.style.background = 'pink';
+			var p = document.getElementsByTagName("p")[0];
+			p.nextElementSibling.style.color = 'blue';
+			var p2 = document.getElementsByTagName("p")[1];
+			p2.previousElementSibling.style.color = 'yellow';
+		}
+	</script>
+</body>
+</html>

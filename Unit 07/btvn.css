@@ -305,13 +305,30 @@ height: 600px;
 /*******************footer**********************/
 #footer{
 	width: 100%;
-	background-color: #009A6D;
+	color: white;
+	background-color: #54CB9A;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
 #footer-up{
 	width: 99%;
 	height: 300px;
+}
+
+#f-u-left{
+	width: 65%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+}
+#f-u-right{
+	width: 30%;
+	height: auto;
+	display: inline-block;
+	float: right;
+	/*padding-top: 50px;*/
+
 }
 
 #footer-down{
@@ -324,7 +341,7 @@ height: 600px;
 }
 
 .f-d-left{
-	width: 35%;
+	width: 40%;
 	height: 60px;
 	float: left;
 	display: inline-block;
@@ -334,10 +351,36 @@ height: 600px;
 .f-d-right{
 	display: inline-block;
 	float: right;
-	width: 60%;
+	width: 55%;
 	height: 60px;
 }
 
+.footerlink i{
+	font-size: 240%;
+	margin: 10px auto;
+}
+.fa{
+	padding: 10px;
+}
+.footerlink i:hover{
+	background-color: white;
+	color: #54CB9A;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.footerlink>.fa-facebook-square:hover{
+	color: blue;
+}
+.footerlink>.fa-twitter-square:hover{
+	color: #009CDD;
+}
+.footerlink>.fa-github-square:hover{
+	color: black;
+}
+.footerlink>.fa-youtube-square:hover{
+	color: red;
+}
 
 
 
@@ -394,10 +437,32 @@ height: 600px;
 		width: 70%;
 		height: 350px;
 	}
+#footer-up{
+	height: 350px;
+}
+
 }
 @media screen and (max-width: 660px){
 	.header-menu{
 		display: none;
+	}
+	#footer-up{
+		height: 550px;
+	}
+	#f-u-left{
+		width: 95%;
+	}
+	#f-u-right{
+		width: 95%;
+	}
+	#footer-down{
+		height: 35px;
+	}
+	.f-d-left{
+		width: 85%;
+		font-size: 60%;
+		font-weight: bold;
+		padding-top: 13px;
 	}
 }
 @media screen and (max-width: 480px){
@@ -450,5 +515,8 @@ height: 600px;
 		width: 100px;
 		height: 35px;
 		font-size: 70%;
+	}
+	#footer-up{
+		height: 600px;
 	}
 }
