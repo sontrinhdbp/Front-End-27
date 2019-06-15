@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai tap 1</title>
+</head>
+
+<style>
+body{
+	background-image: url(https://i1.wp.com/textureshot.com/wp-content/uploads/2018/11/Background-image-for-website-SF-Wallpaper.jpg);
+	background-size: cover;
+	color:  #219666;
+	font-weight: bold;
+	font-family: Corbel;
+}
+fieldset{
+	width: 60%;
+	height: 320px;
+	border-radius: 20px;
+	border-color:  #219666;
+	border-width : 5px;
+	border-style: solid;
+}
+table{
+	margin-right: 280px;
+	width: 100%;
+}
+.o1{
+	width: 120px;
+}
+.o2{
+	width: 35%;
+}
+.o3{
+	width: 35%;
+}
+.txt{
+	width: 100%;
+}
+.bt{
+	width: 100px;
+	height: 30px;
+	margin:20px;
+	border-radius: 8px;
+	border: 0;
+	background-image:  linear-gradient(to bottom right, #54CB91, #219666);
+	color: white;
+	font-weight: bold;
+}
+
+input{
+	padding: 5px;
+	border-radius: 8px;
+	border-color:  #219666;
+	border-style: solid;
+}
+span{
+	color: red;
+	font-weight: bold;
+	margin-left: 20px;
+}
+</style>
+
+
+
+<body>
+	<center>
+		<fieldset>
+			<legend><h1> ĐĂNG KÍ THÔNG TIN</h1></legend>
+			<form action="" method="post">
+				<table>
+					<tr>
+						<td class="o1">Họ Tên</td>
+						<td class="o2"><input type="text" name="txtten" class="txt"></td>
+						<td class="o3"><span></span></td>
+					</tr>
+					<tr>
+						<td class="o1">Giới Tính</td>
+						<td class="o2">
+							<input type="radio" value="Nam" name="radio" checked="true"> Nam
+							<input type="radio" value="Nữ" name="radio"> Nữ
+						</td>
+						<td class="o3"><span></span></td>
+					</tr>
+					<tr>
+						<td class="o1">E-mail</td>
+						<td class="o2"><input type="text" name="txtemail"  class="txt"></td>
+						<td class="o3"><span></span></td>
+					</tr>
+					<tr>
+						<td class="o1">Số điện thoại</td>
+						<td class="o2"><input type="text" name="txtsdt" class="txt"></td>
+						<td class="o3"><span></span></td>
+					</tr>
+					<tr>
+						<td class="o1">Mật Khẩu</td>
+						<td class="o2"><input type="password" name="txtmk" class="txt"></td>
+						<td class="o3"><span></span></td>
+					</tr>
+					<tr>
+						<td class="o1">Xác nhận mật khẩu</td>
+						<td class="o2"><input type="password" name="txtremk" class="txt"></td>
+						<td class="o3"><span></span></td>
+					</tr>
+				</table>
+				<button type="button" value="" class="bt" onclick="addfunction()"
+				>Đăng kí</button>
+				<button type="reset" value="" class="bt">Nhập lại</button>
+			</form>
+		</fieldset>
+	</center>
+	<script type="text/javascript">
+		function addfunction(){
+			// e.preventDefault();
+			var name = document.getElementsByName('txtten')[0].value;
+			var gt = document.getElementsByName('radio').value;
+			var email = document.getElementsByName('txtemail')[0].value;
+			var sdt = document.getElementsByName('txtsdt')[0].value;
+			var mk = document.getElementsByName('txtmk')[0].value;
+			var remk = document.getElementsByName('txtremk')[0].value;
+			var input = document.getElementsByTagName('span');
+			var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+			var regexsdt = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+			var dem = 0;
+			
+			if (name.length <= 5) {
+				input[0].innerHTML = "Tên phải lớn hơn 5 kí tự";
+			}
+			else {
+				input[0].innerHTML = "";
+				dem++;
+			}
+			 
+
+
+			/*if (gt.checked() == false) {
+				input[1].innerHTML = "Mời chọn giới tính";
+			} else {
+				input[1].innerHTML = "";
+			}*/
+			
+			if (!re.test(email)) {
+				input[2].innerHTML = "E-mail sai định dạng";
+			} else {
+				input[2].innerHTML = "";
+				dem++;
+			}
+			 
+
+			if (!regexsdt.test(sdt)) {
+				input[3].innerHTML = "Số điện thoại sai định dạng";
+			}
+			else {
+				input[3].innerHTML = "";
+				dem++;
+			}
+			
+
+
+			if (mk.length < 6) {
+				input[4].innerHTML = "Mật Khẩu phải hơn 5 kí tự";
+			}
+			else {
+				input[4].innerHTML = "";
+				dem++;
+			}
+			
+			if (mk != remk) {
+				input[5].innerHTML = "Chưa trùng với mật khẩu";
+			} else {
+				if (remk == null) {
+				input[5].innerHTML = "";
+				}
+				else{
+					input[5].innerHTML = "✔";
+					dem++;
+				}
+			}
+
+
+
+			if (dem == 5) {
+				alert('Đăng kí thông tin thành công !');
+			} else {
+				alert('Đăng kí thông tin không thành công !')
+			}
+		}
+	</script>
+</body>
+</html>
