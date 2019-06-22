@@ -105,10 +105,10 @@
 <body>
 	<div class="slider-container">
 		<div class="menu">
-			<label for="slide-dot-1" onclick="currentSlide(0)"></label>
-			<label for="slide-dot-2" onclick="currentSlide(1)"></label>
-			<label for="slide-dot-3" onclick="currentSlide(2)"></label>
-			<label for="slide-dot-4" onclick="currentSlide(3)"></label>
+			<label for="slide-dot-1"></label>
+			<label for="slide-dot-2"></label>
+			<label for="slide-dot-3"></label>
+			<label for="slide-dot-4"></label>
 		</div>
 
 		<div class="btn" >
@@ -129,7 +129,17 @@
 		<div class="slide slide-4"></div>
 	</div>
 	<script>
+		var slideIndex = 0;
 		function rclick(){
+			slideIndex++;
+			var i;
+  			var slides = document.getElementsByClassName('slides');
+  			for (i = 0; i < slides.length; i++) {
+  				slides[i].style.display = "none";  
+  			}
+  			slides[slideIndex].style.display = "block";;
+		}
+		function lclick(){
 			var i;
   			var slides = document.getElementsByClassName("slide");
 
@@ -146,31 +156,31 @@
       		}
 		}
 
-		var slideIndex;
+		
   			// KHai bào hàm hiển thị slide
-  		function showSlides() {
-  			var i;
-  			var slides = document.getElementsByClassName("slide");
+  	// 	function showSlides() {
+  	// 		var i;
+  	// 		var slides = document.getElementsByClassName("slide");
 
-  			for (i = 0; i < slides.length; i++) {
-  				slides[i].style.display = "none";  
-  			}
+  	// 		for (i = 0; i < slides.length; i++) {
+  	// 			slides[i].style.display = "none";  
+  	// 		}
 
-  			slides[slideIndex].style.display = "block";
-     		 //chuyển đến slide tiếp theo
-      		slideIndex++;
-      		//nếu đang ở slide cuối cùng thì chuyển về slide đầu
-      		if (slideIndex > slides.length - 1) {
-      			slideIndex = 0
-      		}    
-      			//tự động chuyển đổi slide sau 5s
-      		setTimeout(showSlides, 5000);
-  		}
-  			//mặc định hiển thị slide đầu tiên 
- 		showSlides(slideIndex = 0);
-  		function currentSlide(n) {
-  			showSlides(slideIndex = n);
-  		}
+  	// 		slides[slideIndex].style.display = "block";
+   //   		 //chuyển đến slide tiếp theo
+   //    		slideIndex++;
+   //    		//nếu đang ở slide cuối cùng thì chuyển về slide đầu
+   //    		if (slideIndex > slides.length - 1) {
+   //    			slideIndex = 0
+   //    		}    
+   //    			//tự động chuyển đổi slide sau 5s
+   //    		setTimeout(showSlides, 5000);
+  	// 	}
+  	// 		//mặc định hiển thị slide đầu tiên 
+ 		// showSlides(slideIndex = 0);
+  	// 	function currentSlide(n) {
+  	// 		showSlides(slideIndex = n);
+  	// 	}
 </script>
 </body>
 </html>

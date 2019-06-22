@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			alert("AAAAAAAAAAAAAAA!!!!")
+		});
+	</script>
+</head>
+<body>
+	<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolore beatae nesciunt officiis corrupti sequi deleniti numquam nisi, placeat suscipit eaque modi exercitationem cumque accusantium eum reiciendis dicta? Voluptatum, a.</p>
+	<input type="text" value="Helooooo!!!!!">
+	<p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis iste laborum, magni quibusdam incidunt cupiditate numquam velit in architecto.</p>
+	<script>
+		$(function(){
+			$('#thep').css("color", "red");
+			alert($('.p2').html());
+			alert($('input').val());
+			$('.p2').css({'font-size':'30px', 'color':'blue','background-color':'yellow'});
+			console.log($('.p2').html()); // hiển thị trong thẻ console f12
+		});
+	</script>
+</body>
+</html>

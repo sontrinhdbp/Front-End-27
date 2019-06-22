@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<ul class="location">
+		<li>Hà Nội</li>
+		<li>Hải Phòng</li>
+		<li>Thái BÌnh</li>
+	</ul>
+
+	<script>
+		$(function(){
+			$('.location').prepend('<li>Điện Biên</li>');
+			$('.location').append('<li>Hà Tĩnh</li>');
+			$('.location').after('<p>bạn ở đâu?</p>');
+			$('.location').before('<p>Tạm biệt!</p>');
+		});
+	</script>
+</body>
+</html>

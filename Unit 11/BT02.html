@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	h1{
+		text-align: center;
+	}
+	.head{
+		background-color: orange;
+		color: white;
+		width: 60%;
+		height: 250px;
+		padding-top: 50px;
+	}
+	.addbox{
+		width: 70%;
+		height: 70px;
+	}
+	.ip{
+		width: 70%;
+		height: 70px;
+		display: inline-block;
+		float: left;
+	}
+	#textbox{
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+	#btn{
+		width: 30%;
+		height: 72px;
+		display: inline-block;
+		float: right;
+		border: 0;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	#content{
+		width: 60%;
+	}
+	td{
+		height: 40px;
+		background-color: #FFE080;
+	}
+	.check{
+		width: 10%;
+	}
+	.content{
+		width: 80%;
+		text-align: left;
+	}
+
+	.del{
+		width: 10%;
+		text-align: center;
+	}
+	.del:hover{
+		color: red;
+	}
+</style>
+</head>
+<body>
+	<div class="logo">
+		
+	</div>
+	<center>
+		<div class="head">
+			<h1>My to do list</h1>
+
+			<div class="addbox">
+				<div class="ip">
+					<input type="text" name="txt" placeholder="     Title..." id="textbox">
+				</div>
+				<div class="bt">
+					<button id="btn">Add</button>
+				</div>
+			</div>
+			
+
+
+		</div>
+
+		<div class="list">
+			<table cellspacing="0" id="content">
+				<!-- <tr>
+					<td class="check"></td>
+					<td class="content"></td>
+					<td class="del"></td>
+				</tr> -->
+			</table>
+		</div>
+	</center>
+	<script>
+		$(function(){
+			$('#btn').click(function() {
+				var input = $('#textbox').val();
+				$('#content').append(
+					`<tr>
+					<td class="check"></td>
+					<td class="content">` + input + `</td>
+					<td class="del"><i class="fa fa-times-circle" aria-hidden="true"></i></td>
+					</tr>`
+					)
+				$('#textbox').val("")
+			});
+			$('body').on('click', '.del', function() {
+				$(this).parent().remove();
+			});
+		});
+	</script>
+</body>
+</html>

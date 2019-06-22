@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p>Helloooooooooo!</p>
+	<div id="thediv">
+		
+	</div>
+	<input type="button" id="click" value="click">
+	<script>
+		$(function(){
+			$('#click').click(function(){
+				$('#thediv').append("<p id='thep'> thẻ p vừa đc tạo</p>")
+			});
+			$('#thediv').on('click', "#thep", function(){
+				$(this).css('color', "red");
+			})
+		});
+	</script>
+</body>
+</html>
