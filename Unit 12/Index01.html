@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		.ancestors *{
+			display: block;
+			border: 3px solid black;
+			color: grey;
+			margin: 10px;
+			padding: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			//thành phần cha
+			$('span').parent().css({ 
+				color: 'red',
+				border: '3px solid red'
+			});
+
+
+			//toàn bộ các thành phần cha ông tổ tiên ... 
+			// $('span').parents('div', 'ul').css({
+			// 	color: 'red',
+			// 	border: '3px solid red'
+			// });
+
+			//toàn bộ các thành phần cha ông tổ tiên cho đến thẻ "div"
+			// $('span').parentsUntil("div").css({
+			// 	color: 'red',
+			// 	border: '3px solid red'
+			//});
+
+		});
+	</script>
+</head>
+<body class="ancestors">
+	<div> div
+		<ul> ul
+			<li> li
+				<span>
+					Span
+				</span>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<style>
+		body{
+			width: 70%;
+			margin-left: 15%;
+			background-image: url('https://www.siarza.com/wp-content/uploads/2017/12/webplunder-background-image-technology-online-website-solutions.jpg');
+			background-size: cover;
+		}
+		.list{
+			width: 100%;
+			height: 80px;
+
+		}
+		.list-sel{
+			width: 220px;
+			height: 47px;
+			text-align: center;
+			font-size: 25px;
+			display: inline-block;
+			margin: 5px;
+			background-color: #dedede6d;
+			border-radius: 8px;
+			padding-top: 15px;
+		}
+		.btn:hover, .sel1{
+			background-color: #6f6f6f6d;
+			cursor: pointer;
+			color: white;
+		}
+		
+		
+		.content{
+			width: 100%;
+			height: 500px;
+			border-radius: 8px;
+			background-color: #dedede6d;
+		}
+		.content-in{
+			padding: 10px 0px 0px 35px;
+		}
+		h4{
+			margin: 10px;
+		}
+		input{
+			width: 300px;
+			height: 30px;
+			border-radius: 8px;
+			border: 0;
+			padding: 0;
+		}
+		.content2, .content3, .content4{
+			display: none;
+		}
+
+		#btn{
+			width: 100%;
+			height: 70px;
+
+		}
+		.btn{
+			width: 100px;
+			height: 50px;
+			border-radius: 8px;
+			border: 0;
+			margin: 6px 3px;
+			float: right;
+			display: inline-block;
+			background-color: #dedede6d;
+			font-weight: bold;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="list">
+		<div class="list-sel sel1">1. Account</div>
+		<div class="list-sel sel2">2. Profile</div>
+		<div class="list-sel sel3">3. Warning</div>
+		<div class="list-sel sel4">4. Finish</div>
+	</div>
+
+	<div class="content">
+		<div class="content1 content-in">
+			<h4>Tên tài khoản *</h4>
+			<input type="text">
+			<h4>Mật khẩu *</h4>
+			<input type="text">
+			<h4>Xác nhận mật khẩu *</h4>
+			<input type="text">
+			<h4>(*) Bắt buộc</h4>
+		</div>
+		<div class="content2 content-in">
+			<h4>Họ đệm *</h4>
+			<input type="text" name="txtid">
+			<h4>Tên *</h4>
+			<input type="text" name="txtid">
+			<h4>Email *</h4>
+			<input type="text" name="txtid">
+			<h4>Địa chỉ </h4>
+			<input type="text" name="txtid">
+			<h4>Tuổi *</h4>
+			<input type="text" name="txtid">
+			<h4>(*) Bắt buộc</h4>
+		</div>
+		<div class="content3 content-in">
+			<h2>Điều khoản và dịch vụ</h2>
+			<br>
+			<h4>Bằng việc chọn "Tôi đồng ý",bạn đã chấp nhận các điều khoản dịch vụ của chúng tôi</h4>
+			<hr style="width: 90%">
+			<input type="checkbox" style="position: absolute; float: left;"><h3>Tôi đồng ý</h3>
+		</div>
+		<div class="content4 content-in">
+			<h3>Chúc mừng! Bạn đã đăng kí thành công!</h3>
+		</div>
+	</div>
+
+	<div id="btn">
+		<input type="button" class="btn" id="btn1a" value="Tiếp theo">
+		<input type="button" class="btn" id="btn2a" value="Quay lại">
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			$('#btn1a').click(function(){
+				$(".content1").hide();
+				$(".content2").show();
+				$(".sel2").addClass('sel1');
+				$(this).attr("id", "btn1b");
+				$('#btn2a').attr("id", "btn2b");
+				////////////////////////////////
+				$('#btn1b').click(function(){
+				 	$(".content2").hide();
+				 	$(".content3").show();
+				 	$(".sel3").addClass('sel1');
+				 	$(this).attr("id", "btn1c");
+				 	$('#btn2b').attr("id", "btn2c");
+				 	//////////////////////////////////
+				 	$('#btn1c').click(function(){
+				 		$(".content3").hide();
+				 		$(".content4").show();
+				 		$(".sel4").addClass('sel1');
+				 		$('#btn2c').attr("id", "btn2d");
+				 		$(this).attr("id", "btn1d");
+				 		/////////////////////////////////////
+				 		$('#btn2d').click(function(){
+				 			$(".content4").hide();
+				 			$(".content3").show();
+				 			$(".sel4").removeClass('sel1');
+				 			$(this).attr("id", "btn2c");
+				 			$('#btn1d').attr("id", "btn1c");
+				 			///////////////////////////////////
+				 			$('#btn2c').click(function(){
+						 		$(".content3").hide();
+						 		$(".content2").show();
+						 		$(".sel3").removeClass('sel1');
+						 		$(this).attr("id", "btn2b");
+						 		$('#btn1c').attr("id", "btn1b");
+						 		//////////////////////////////////
+						 		$('#btn2b').click(function(){
+								 	$(".content2").hide();
+								 	$(".content1").show();
+								 	$(".sel2").removeClass('sel1');
+								 	$(this).attr("id", "btn2a");
+								 	$('#btn1b').attr("id", "btn1a");
+								 });
+						 	});
+				 		});
+				 	});
+				});
+			});
+		 	
+
+
+				// $('#btn1').toggleClass('btn1a');
+				// $('#btn2').toggleClass('btn2a');
+				// $('#btn1').removeAttr('id');
+				// $('#btn2').removeAttr('id');
+				// // $('#btn2').attr("id", "btn2a");
+
+				// $('.btn1a').click(function(){
+				// 	$(".content2").hide();
+				// 	$(".content3").show();
+				// 	$('.btn1a').toggleClass('btn1b');
+				// 	$('.btn2a').toggleClass('btn2b');
+				// });
+				// $('.btn2a').click(function(){
+				// 	$(".content2").hide();
+				// 	$(".content1").show();
+				// 	$('.btn2a').removeClass('btn2a');
+				// 	$(".btn1a").attr("id","btn1");
+				// 	$('.btn1a').removeClass('btn1a');
+					// $('.btn1a').toggleClass('btn1b');
+					// $('.btn2a').toggleClass('btn2b');
+				 });
+	</script>
+</body>
+</html>

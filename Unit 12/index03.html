@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		.siblings *{
+			display: block;
+			border: 3px solid black;
+			color: grey;
+			margin: 10px;
+			padding: 10px;
+		}
+	</style>
+	<script>
+		$(document).ready(function() {
+			// $('h2').next().css('border-color', 'red');
+			// $('h2').nextAll().css('border-color', 'red');
+			 $('h2').nextUntil('h5').css('border-color', 'red');
+			// $('h2').prev().css('border-color', 'red');
+			// $('h2').siblings().css('border-color', 'red');
+			//$('h2').siblings('h1').css('border-color', 'red');
+		});
+	</script>
+</head>
+<body>
+	<div class="siblings">
+		<div>parent
+			<h1>hello</h1>
+			<h2>hello</h2>
+			<h3>hello</h3>
+			<h4>hello</h4>
+			<h5>hello</h5>
+			<h6>hello</h6>
+		</div>
+		
+	</div>
+</body>
+</html>

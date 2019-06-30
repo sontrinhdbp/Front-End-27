@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<button id="hide"> Hide</button>
+	<button id="show"> Show</button>
+	<button id="toggle"> Toggle</button>
+	<button id="fadeout"> Fade Out</button>
+	<button id="fadetg"> Fade Toggle</button>
+	<div style="width: 111px; height: 111px; background-color: yellow">
+		
+	</div>
+	
+
+	<script>
+		$(document).ready(function() {
+			$('#hide').click(function(event) {
+				$('div').hide('slow/400/fast', function() {
+					
+				});
+			});
+			$('#show').click(function(event) {
+				$('div').show('slow/400/fast', function() {
+					
+				});
+			});
+			$('#toggle').click(function(event) {
+				$('div').toggle('slow/400/fast', function() {
+					
+				});
+			});
+			$('#fadeout').click(function(event) {
+				$('div').fadeOut(3000);
+			});
+			$('#fadetg').click(function(event) {
+				$('div').fadeToggle(1000);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<button id="down">Slide Down</button>
+	<button id="up">Slide Up</button>
+	<button id="toggle">Slide Toggle</button>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quia enim blanditiis natus officia modi, dolorum excepturi accusantium fugiat quisquam. Illo, saepe! 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio consectetur iusto sit expedita, ratione a assumenda at, voluptas ex itaque accusantium cum porro. Quibusdam quas nam sint ipsam ipsa distinctio. Nam eius recusandae iusto ex officia odit tempore obcaecati animi iure fuga dolorum, culpa vero, sapiente minus rem, alias at. Quibusdam nostrum ipsa sit atque.</p>
+
+	<script>
+		$(document).ready(function() {
+			$('#down').click(function(event) {
+				/* Act on the event */
+				$('p').slideDown('slow/400/fast', function() {
+					
+				});
+			});
+			$('#up').click(function(event) {
+				/* Act on the event */
+				$('p').slideUp('slow/400/fast', function() {
+					
+				});
+			});
+			$('#toggle').click(function(event) {
+				/* Act on the event */
+				$('p').slideToggle('slow/400/fast', function() {
+					
+				});
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		.siblings *{
+			display: block;
+			border: 3px solid black;
+			color: grey;
+			margin: 10px;
+			padding: 10px;
+		}
+	</style>
+	<script>
+		$(document).ready(function() {
+			// $('div').first().css('background', 'pink');
+			// $('div').last().css('background', 'pink');
+			// $('div').eq(2).css('background', 'pink');
+			$('div').not(".hihi").css('background', 'pink');
+		});
+	</script>
+</head>
+<body class="siblings">
+	
+		<div>parent
+			<h1>hello</h1>
+			<h2>hello</h2>
+			<h3>hello</h3>
+			<h4>hello</h4>
+			<h5>hello</h5>
+			<h6>hello</h6>
+		</div>
+		<div>parent
+			<h1>hello</h1>
+			<h2>hello</h2>
+			<h3>hello</h3>
+			<h4>hello</h4>
+			<h5>hello</h5>
+			<h6>hello</h6>
+		</div>
+		<div class="hihi">parent
+			<h1>hello</h1>
+			<h2>hello</h2>
+			<h3>hello</h3>
+			<h4>hello</h4>
+			<h5>hello</h5>
+			<h6>hello</h6>
+		</div>
+		<div>parent
+			<h1>hello</h1>
+			<h2>hello</h2>
+			<h3>hello</h3>
+			<h4>hello</h4>
+			<h5>hello</h5>
+			<h6>hello</h6>
+		</div>
+		<div>parent
+			<h1>hello</h1>
+			<h2>hello</h2>
+			<h3>hello</h3>
+			<h4>hello</h4>
+			<h5>hello</h5>
+			<h6>hello</h6>
+		</div>
+		
+	
+</body>
+</html>
